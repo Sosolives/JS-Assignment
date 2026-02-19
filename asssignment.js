@@ -72,4 +72,13 @@ for (let i = 0; i < arr.length; i++) {
 }
 printArray([1, 2, 3, 4, 5]);
 
+//Question 5
+let datetime= new Date()
+console.log(datetime)
+function showDateTime() {
+    let date = datetime.toLocaleDateString ("en-GB"); //to convert into readable date great britain format
+    let time = datetime.toLocaleTimeString([], {hour: "2-digit", minute:"2-digit"});
 
+  return date + " " + time;
+}
+console.log(showDateTime())
